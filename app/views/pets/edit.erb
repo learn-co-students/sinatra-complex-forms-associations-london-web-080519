@@ -1,16 +1,16 @@
 <h1>Update Pet</h1>
 
  
-<h2>Edits for <%= @pet.name %></h2>
+<h2>Edit <%= @pet.name %></h2>
  
   <form action="/pets/<%= @pet.id %>" method="POST">
     <input id="hidden" type="hidden" name="_method" value="PATCH">
-    <label>Edit the Pets's Name:</label>
+    <label>Edit Pet Name:</label>
     <br>
     <input type="text" name="pet[name]" id="pet_name" value="<%= @pet.name %>">
  
     <br>
-    <p>Select an existing owner or create a new one below.</p>
+    <p>Select an existing owner or create a new one below:</p>
  
  
     <h3>Existing Owners</h3>
